@@ -1,0 +1,23 @@
+local MyTable = {"Hello!", 2, 15, true}
+
+print(#MyTable)--shows/ prints length of table
+
+print(MyTable[2])-- prints the second item in table
+
+table.insert(MyTable, "This is an added value")
+
+print(MyTable)
+
+if table.find(MyTable, "Hello!") then
+	print("We found hello!")
+end
+
+if table.find(MyTable,"Hello!") then
+	print(table.find(MyTable, "Hello!"))-- prints the index as the find returns the index of what it found
+end
+
+if table.find(MyTable,"Hello!") then
+	local HelloIndex = table.find(MyTable, "Hello!") -- index 1
+	table.remove(MyTable, HelloIndex) -- removes whatevers at that index
+	print(MyTable)
+end
