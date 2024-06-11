@@ -1,0 +1,47 @@
+function SpawnPart()
+	local MyPart = Instance.new("Part") -- game.Workspace.Part
+	MyPart.Parent = game.Workspace
+	--MyPart.Position	= Vector3.new(40,2,13) --measurement system called studs
+	--MyPart.Position = game.Workspace:WaitForChild("PositionPart").Position
+	
+	MyPart.BrickColor = BrickColor.random()
+
+end
+
+SpawnPart()
+
+wait(1)
+
+SpawnPart()
+
+wait(1)
+
+SpawnPart()
+
+wait(1)
+
+SpawnPart()
+
+wait(1)
+
+SpawnPart()
+
+wait(1)
+
+SpawnPart()
+
+wait(1)
+
+SpawnPart()
+
+wait(1)
+
+
+local MyExplosion = Instance.new("Explosion")
+MyExplosion.Parent = game.Workspace
+
+wait(1)
+
+MyExplosion:Destroy() --gets rid of it from workspace
+
+--game.workspace:WaitForChild("SizePart").Size = Vector3.new(20,20,20)
