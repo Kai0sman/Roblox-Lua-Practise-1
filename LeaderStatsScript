@@ -1,0 +1,17 @@
+game.Players.PlayerAdded:Connect(function(player)
+	local leaderstats = Instance.new("Folder")
+	leaderstats.Name = "leaderstats"
+	leaderstats.Parent = player	
+	
+	local Coins = Instance.new("IntValue")
+	Coins.Name = "Coins"
+	Coins.Parent = leaderstats
+	Coins.Value = 0
+	
+	
+	while true do
+		Coins.Value = Coins.Value + 10
+		
+		wait(1)
+	end
+end)
