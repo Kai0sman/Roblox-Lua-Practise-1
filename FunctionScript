@@ -1,0 +1,15 @@
+function ChangeColour(Functionspart, number)
+	Functionspart.BrickColor = BrickColor.Random()
+end
+
+wait(5)
+
+ChangeColour(game.Workspace.FunctionsPart, 1)
+
+wait(2)
+
+ChangeColour(game.Workspace.FunctionsPart1, 2)	
+
+wait(2)
+
+ChangeColour(game.Workspace.FunctionsPart2,3)
