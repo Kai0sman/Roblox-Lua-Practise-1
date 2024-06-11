@@ -1,0 +1,23 @@
+local myVariable = "CodeBro29"
+
+if 1 + 1 == 2 and 2 + 2 == 4 then
+	print("The statement is true! 1 + 1 = 2")
+end
+
+
+if myVariable == "codebro29" or 1 + 1 == 2 then
+	print("Something was true for the if statement")
+end
+
+if myVariable == "codebro29" then
+	print("myVariable is CodeBro29")
+elseif myVariable	== "CodeBruh29" then
+	print("myVariable = CodeBruh")
+else
+	print("myVariable is not CodeBro29 or CodeBruh")  
+end
+
+
+if 3 > 2 then
+	print("3 is greater than 2")
+end
