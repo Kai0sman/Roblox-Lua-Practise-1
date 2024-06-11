@@ -1,0 +1,35 @@
+local MyTable = {4,2,213,1, "Hello!", true}
+
+local players = game.Players:GetPlayers()
+
+local itemsInWorkspace = game.Workspace:GetChildren()
+
+local DescendantsInWorkspace = game.Workspace:GetDescendants()
+
+for i = 1, 10, 1 do -- i is 1, stop when i == 10, 3rd number is increment
+	print(i)
+end
+
+for i, v in pairs(MyTable) do -- loop through everything in my table
+	print(i)
+	print(v)
+end
+
+wait(5)
+
+while #game.Players:GetPlayers()  > 0 do -- while condition do
+	--print("There is more than 0 Players in the game!")
+	
+	wait(1)
+	
+	if #game.Players:GetPlayers() == 0 then
+		print("All Playes have left the Game!")	
+		break	
+	end
+end
+
+repeat 
+	print("Hello")
+	wait(1)
+until
+	#game.Players:GetPlayers() > 0
