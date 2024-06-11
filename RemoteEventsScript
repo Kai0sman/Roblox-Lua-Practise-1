@@ -1,0 +1,26 @@
+game.ReplicatedStorage.SpawnPart.OnServerEvent:Connect(function(player)
+	local part = Instance.new("Part")
+	part.Parent = game.Workspace
+	part.BrickColor = BrickColor.Random()
+	
+	local character = game.Workspace:WaitForChild(player.Name)
+	
+	local head = character:WaitForChild("Head")
+	
+	part.Position =  head.Position + Vector3.new(5,0,5)
+end)
+
+game.Players.PlayerAdded:Connect(function(player)
+	wait(2)
+	
+	game.ReplicatedStorage.UpdateStatus:FireClient(player, "You have joined the game!")
+end)
+
+while true do 
+	
+	wait(10)
+	game.ReplicatedStorage.UpdateStatus:FireAllClients("This is Updating to all Clients!")
+
+	wait(5)
+	game.ReplicatedStorage.UpdateStatus:FireAllClients("Are We all getting this Message?")
+end
