@@ -1,0 +1,5 @@
+local ffcblock = game.Workspace:WaitForChild("FFCBlock")
+
+if ffcblock then
+	game.Workspace:FindFirstChild("FFCBlock").BrickColor = BrickColor.Random()
+end
