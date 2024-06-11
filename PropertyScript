@@ -1,0 +1,11 @@
+wait(10)
+
+local Part = game.Workspace.PropertiesPart
+Part.Anchored = false
+
+wait(3)
+Part.Anchored = true
+Part.CanCollide	= false
+
+wait(2)
+Part.BrickColor	= BrickColor.new("Royal blue")
