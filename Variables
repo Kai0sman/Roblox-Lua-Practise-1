@@ -1,0 +1,11 @@
+local VariableName = "Hello!"
+
+print(VariableName)
+
+VariableName = "New String"
+
+print(VariableName)
+
+local booleanVariable = false
+
+local integerVariable = 1234567
