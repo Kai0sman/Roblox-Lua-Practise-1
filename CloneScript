@@ -1,0 +1,8 @@
+wait(5)
+
+local PartsClone = game.ReplicatedStorage.Parts:Clone()
+PartsClone.Parent = game.Workspace
+
+wait(2)
+
+PartsClone:Destroy()
