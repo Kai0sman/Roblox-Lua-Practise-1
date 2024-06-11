@@ -1,0 +1,4 @@
+game.Players.PlayerAdded:Connect(function(player)
+	print(player)
+	print("A Player has joined the Game!")
+end)
